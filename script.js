@@ -1,7 +1,5 @@
-// 1. Initialize AOS (Animate On Scroll)
 AOS.init();
 
-// 2. Typing Effect for Header Title
 const headerText = "Hi, I'm [Manasseh Githua]";
 let i = 0;
 const header = document.querySelector("header h1");
@@ -13,10 +11,9 @@ function typeEffect() {
     setTimeout(typeEffect, 100);
   }
 }
-header.textContent = ""; // Start with empty text
+header.textContent = "";
 typeEffect();
 
-// 3. Dark Mode Toggle with localStorage
 const darkModeToggle = document.createElement("button");
 darkModeToggle.textContent = "🌙 Toggle Dark Mode";
 darkModeToggle.style.position = "fixed";
@@ -46,7 +43,6 @@ if (localStorage.getItem("darkMode") === "true") {
   setDarkMode(true);
 }
 
-// 4. Scroll-to-top Button
 const scrollTopBtn = document.createElement("button");
 scrollTopBtn.textContent = "↑";
 scrollTopBtn.style.position = "fixed";
